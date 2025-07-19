@@ -114,3 +114,13 @@ class LinkedList {
     return str;
   }
 }
+
+const list = new LinkedList();
+
+list.append("A");
+list.append("B");
+list.append("C");
+
+console.log("Size:", list.size());
+console.log("Tail value:", list.tail().value);
+console.log("At index 1:", list.at(1).value);
