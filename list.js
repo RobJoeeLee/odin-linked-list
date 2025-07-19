@@ -65,4 +65,17 @@ class LinkedList {
     }
     return null;
   }
+
+  pop() {
+    if (!this.headNode) return;
+    if (!this.headNode.nextNode) {
+      this.headNode = null;
+      return;
+    }
+    let current = current.headNode;
+    while (current.nextNode.nextNode !== null) {
+      current = current.nextNode;
+    }
+    current.nextNode = null;
+  }
 }
