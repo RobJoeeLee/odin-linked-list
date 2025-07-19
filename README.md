@@ -1,1 +1,1 @@
-# odin-linked-list
+Creating a simple Linked list using vanilla JavaScript.
