@@ -28,4 +28,15 @@ class LinkedList {
     const newNode = new Node(value);
     this.headNode = newNode;
   }
+
+  size() {
+    let count = 0;
+    let current = this.headNode;
+
+    while (current !== null) {
+      count++;
+      current = current.nextNode;
+    }
+    return count;
+  }
 }
